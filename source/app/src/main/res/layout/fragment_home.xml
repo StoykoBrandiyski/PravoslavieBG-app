@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/homeMainTextView"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montaga"
+            android:gravity="center"
+            android:padding="15sp"
+            android:shadowColor="#6C1616"
+            android:text="@string/homeMainText"
+            android:textColorHighlight="#F32727"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/inspiringHomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Напиши вдъхновяващ текст"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeMainTextView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="420dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/main_home_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inspiringHomeText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRandomMonastery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

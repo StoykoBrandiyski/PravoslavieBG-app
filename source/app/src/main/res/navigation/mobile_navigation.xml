@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pravoslaviebg.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/saintListFragment"
+        android:name="com.example.pravoslaviebg.ui.saint.SaintListFragment"
+        android:label="@string/menu_gallery">
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_saintDetailsFragment"
+        app:destination="@id/saintDetailsFragment" />
+
+    <action
+        android:id="@+id/action_global_prayertDetailsFragment"
+        app:destination="@id/prayerDetailsFragment" />
+
+    <action
+        android:id="@+id/action_global_monasterytDetailsFragment"
+        app:destination="@id/monasterytDetailsFragment" />
+
+    <fragment
+        android:id="@+id/saintDetailsFragment"
+        android:name="com.example.pravoslaviebg.ui.saint.SaintDetailsFragment"
+        android:label="Детайли за светец">
+        <argument
+            android:name="saintId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.pravoslaviebg.ui.prayer.PrayerListFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/prayerDetailsFragment"
+        android:name="com.example.pravoslaviebg.ui.prayer.PrayerDetailsFragment"
+        android:label="Детайли за молитвата">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_monastery"
+        android:name="com.example.pravoslaviebg.ui.monastery.MonasteryListFragment"
+        android:label="@string/menu_monastery">
+    </fragment>
+
+    <fragment
+        android:id="@+id/monasterytDetailsFragment"
+        android:name="com.example.pravoslaviebg.ui.monastery.MonasteryDetailsFragment"
+        android:label="Детайли за манастира">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="com.example.pravoslaviebg.ui.book.BookListFragment"
+        android:label="@string/menu_book">
+    </fragment>
+</navigation>

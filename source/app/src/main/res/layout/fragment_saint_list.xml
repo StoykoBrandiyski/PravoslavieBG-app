@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/spinnerPeriod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/saint_period_options"
+                    tools:ignore="Suspicious0dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/saint_type_options"
+                    tools:ignore="Suspicious0dp" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSaints"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

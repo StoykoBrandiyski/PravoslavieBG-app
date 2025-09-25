@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PravoslavieBg-rer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="question_intro_text">Intro Text</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Светци</string>
+    <string name="menu_slideshow">Молитви</string>
+    <string name="menu_monastery">Манастири</string>
+    <string name="menu_book">Библиотека</string>
+    <string name="menu_question_game">Въпросник</string>
+    <string name="imageFromGallery">Image From Galley</string>
+    <string name="homeMainText">Добре дошли, християни"</string>
+    <string name="logout">Logout</string>
+
+
+    <!-- Filters Saints -->
+    <string-array name="saint_period_options">
+        <item>All Periods</item>
+        <item>XII</item>
+        <item>XX</item>
+    </string-array>
+
+    <string-array name="saint_type_options">
+        <item>All Types</item>
+        <item>апостол</item>
+        <item>безсребреник</item>
+        <item>праведен</item>
+    </string-array>
+
+    <!-- Filters Prayers -->
+    <string-array name="prayer_purpose_options">
+        <item>All Purpose</item>
+        <item>Предназначение</item>
+    </string-array>
+
+    <!-- Filters Monastery -->
+    <string-array name="monastery_location_options">
+        <item>All Locations</item>
+        <item>София</item>
+    </string-array>
+
+</resources>

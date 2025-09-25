@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageSaintIcon"
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_slideshow"
+                android:contentDescription="test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textSaintName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                tools:text="Св. Иван Рилски" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_slideshow"
+                android:contentDescription="test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HelpFor:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textHelpFor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                tools:text="HelpFor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_camera"
+                android:contentDescription="Test"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CelebrationDate:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textCelebrationDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                tools:text="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_slideshow"
+                android:contentDescription="test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LifePeriod:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textLifePeriod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                tools:text="LifePeriod" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_camera"
+                android:contentDescription="Test"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type:"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                tools:text="Type" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Description"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textSaintDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="4dp"
+            tools:text="Той е бил отшелник в Рила..." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Галерия"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGallery"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Молитви"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPrayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Манастири"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMonasteries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Книги"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
